@@ -5,6 +5,11 @@
    License: none (public domain)
 */
 
+@font-face {
+    font-family: "josefins";
+    src: url("../josefin-sans/JosefinSans-SemiBoldItalic.ttf");
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -32,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    font-size: 'josefins';
 }
 ol, ul {
 	list-style: none;
@@ -274,6 +280,109 @@ table {
 
 }
 }
+
+.services{
+    .row{
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .img{
+            display: flex;
+            gap: 1%;
+            .images{
+                position: relative;
+                width: 39%;
+                img{
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+                .pic{
+                    position: absolute;
+                    bottom: 100px;
+                    right: -5px;
+                    height: 30px;
+                    width: 30px;
+                }
+                p{
+                    position: absolute;
+                    bottom: 100px;
+                    color: aqua;
+                }
+                .picture{
+                    width: 100%;
+                    height: 63.7%;
+
+                }
+            }
+            .images1{
+                width: 39%;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+.testimonials{
+    .right{
+        h2{
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            font-weight: 550;
+        }
+        h4{
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 550;
+        }
+        .paragraph{
+            margin-bottom: 30px;
+            font-weight: 550;
+        }
+       .pic-cont{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .forward{
+            width: 30px;
+            position: absolute;
+            background: purple;
+            bottom: 5px;
+            right: 0;
+        }
+       }
+    }
+    .left{
+        margin-top: 30px;
+      .pic-cont{
+        position: relative;
+        img{
+            width: 100%;
+        }
+        .forward{
+            width: 30px;
+            background: purple;
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+        }
+      }
+        h3{
+            font-size: 1.4rem;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-weight: 550;
+        }
+        h4{
+            margin-bottom: 30px;
+            font-weight: 550;
+        }
+    }
+}
 /*
 ####################################################
 M E D I A  Q U E R I E S
@@ -384,6 +493,32 @@ No media query since this is the default in Bootstrap because it is "mobile firs
          }
      }
 
+     .about{
+
+        img{
+            height: 100%;
+            object-fit: cover;
+        }
+        .img{
+            margin-top: 50px;
+            height: 100%;
+            object-fit: cover;
+            margin-left: -20px;
+        }
+     }
+
+     .services{
+        .images{
+            p{
+                top: 330px;
+            }
+            img{
+                top: 320px;
+            }
+
+        }
+     }
+
 }
 
 
@@ -433,8 +568,37 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             }
         }
     }
+    .about{
+        .text{
+            .text-one{
+                margin-left: 10vw;
+            }
+          div{
+            margin-top: 20px;
+            img{
+                width: 41%;
+                height: fit-content;
+            }
+            .img{
+                margin-top: 129px;
+            }
+          }
+        }
+    }
+
+    .services{
+        .images{
+            img{
+                top: 620px;
+            }
+            p{
+                top: 620px;
+            }
+        }
+    }
 
 }
+
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {  
