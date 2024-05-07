@@ -108,10 +108,12 @@ table {
   align-items: center;
   justify-content: center;
   position: relative;
+  border: white;
 }
 .navbar .active-lines .line {
   transform: rotate(45deg);
   position: absolute;
+  background: white;
 }
 .navbar .active-lines .middle {
   opacity: 0;
@@ -119,6 +121,7 @@ table {
 .navbar .active-lines .line-2 {
   transform: rotate(-45deg);
   position: absolute;
+  background: white;
 }
 .navbar .vincent {
   display: block;
@@ -144,6 +147,7 @@ table {
   right: 10px;
   border: 3px solid #701891;
   height: 60px;
+  top: 5px;
   width: 65px;
   border-radius: 10px;
   display: flex;
@@ -204,6 +208,9 @@ table {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.banner .text .links img {
+  background: white;
 }
 .banner .images {
   padding: 3rem 0px;
@@ -295,17 +302,17 @@ table {
 
 .testimonials .right h2 {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 550;
 }
 .testimonials .right h4 {
   font-size: 1.4rem;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 550;
 }
 .testimonials .right .paragraph {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 550;
 }
 .testimonials .right .pic-cont {
@@ -339,13 +346,74 @@ table {
 }
 .testimonials .left h3 {
   font-size: 1.4rem;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   font-weight: 550;
 }
 .testimonials .left h4 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 550;
+}
+
+.social .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8%;
+}
+.social .right img {
+  width: 16%;
+}
+.social .right .img {
+  margin-top: 50px;
+}
+
+.follow div {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.follow div button {
+  padding: 10px 40px;
+  background: #701891;
+  border: none;
+  color: #fff;
+}
+
+.footer {
+  background: #701891;
+  color: white;
+}
+.footer h4 {
+  font-weight: 600;
+  text-decoration: underline;
+}
+.footer .first {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.footer .first p {
+  width: 150px;
+}
+.footer .first img {
+  height: 20px;
+}
+.footer .first .logo {
+  height: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+  background: white;
+}
+.footer .first div {
+  display: flex;
+  gap: 10px;
+}
+.footer .second {
+  padding: 0rem 0px 2rem 1rem;
 }
 
 /*
@@ -377,6 +445,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     justify-content: space-between;
     align-items: center;
   }
+  .navbar .pc-nav .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
   .navbar .pc-nav span {
     color: #701891;
   }
@@ -384,7 +458,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: flex;
     align-items: center;
     gap: 20px;
-    margin-right: 15px;
   }
   .navbar .pc-nav .links p {
     font-size: 1.25rem;
@@ -395,6 +468,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .navbar .pc-nav .links .theme2 img {
     height: 30px;
+    background: white;
   }
   .navbar .pc-nav .links .theme2 .light-theme {
     position: absolute;
@@ -407,6 +481,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .navbar .pc-nav .links .witch .light-theme .dark-theme {
     position: absolute;
     display: none;
+    height: 0px;
   }
   .banner .text h2 {
     font-size: 1.5rem;
@@ -445,6 +520,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     top: 320px;
   }
 }
+.testimonials .left {
+  margin-top: 0;
+}
+
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .pc-nav .links {
@@ -505,6 +584,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .services .images p {
     top: 620px;
+  }
+  .testimonials .right .margin {
+    margin-left: 10rem;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */

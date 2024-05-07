@@ -117,10 +117,12 @@ table {
         align-items: center;
         justify-content: center;
         position: relative;
+        border: white;
     
         .line{
             transform: rotate(45deg);
             position: absolute;
+            background: white;
         }
         .middle{
             opacity: 0;
@@ -129,6 +131,7 @@ table {
         .line-2{
             transform: rotate(-45deg);
             position: absolute;
+            background: white;
         }
     }
 
@@ -158,6 +161,7 @@ table {
             right: 10px;
             border: 3px solid #701891;
             height: 60px;
+            top: 5px;
             width: 65px;
             border-radius: 10px;
             display: flex;
@@ -221,6 +225,9 @@ table {
                 display: flex;
                 gap: 10px;
                 align-items: center;
+            }
+            img{
+                background: white;
             }
         }
 }
@@ -329,17 +336,17 @@ table {
     .right{
         h2{
             font-size: 1.5rem;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 550;
         }
         h4{
             font-size: 1.4rem;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-weight: 550;
         }
         .paragraph{
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 550;
         }
        .pic-cont{
@@ -373,14 +380,77 @@ table {
       }
         h3{
             font-size: 1.4rem;
-            margin-top: 30px;
-            margin-bottom: 30px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             font-weight: 550;
         }
         h4{
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-weight: 550;
         }
+    }
+}
+.social{
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.8%;
+
+            img{
+                width: 16%;
+            }
+            .img{
+                margin-top: 50px;
+            }
+        }
+}
+.follow{
+   div{
+    display: flex;
+    flex-direction: column;
+    padding:3rem 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    button{
+        padding: 10px 40px;
+        background: #701891;
+        border: none;
+        color: #fff;
+    }
+   }
+}
+.footer{
+    background: #701891;
+    color: white;
+    h4{
+        font-weight: 600;
+        text-decoration: underline;
+    }
+    .first{
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        p{
+            width: 150px;
+        }
+        img{
+            height: 20px;
+        }
+        .logo{
+            height: 40px;
+            width: fit-content;
+            background: white;
+        }
+        div{
+            display: flex;
+            gap: 10px;
+        }
+    }
+    .second{
+        padding: 0rem 0px 2rem 1rem;
     }
 }
 /*
@@ -424,6 +494,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             justify-content: space-between;
             align-items: center;
 
+            .container{
+                display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            }
             span{
                 color: #701891;
             }
@@ -432,7 +508,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             display: flex;
             align-items: center;
             gap: 20px;
-            margin-right: 15px;
 
             p{
                 font-size: 1.25rem;
@@ -444,6 +519,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
                 img{
                     height: 30px;
+                    background: white;
                 }
 
                 .light-theme{
@@ -460,6 +536,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
                     .dark-theme{
                         position: absolute;
                         display: none;
+                        height: 0px;
                     }
 
                 }
@@ -520,7 +597,11 @@ No media query since this is the default in Bootstrap because it is "mobile firs
      }
 
 }
-
+.testimonials{
+    .left{
+        margin-top: 0;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
@@ -596,7 +677,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             }
         }
     }
+    .testimonials{
+        .right{
+            .margin{
+                margin-left: 10rem;
 
+
+
+            }
+        }
+    }
 }
 
 
