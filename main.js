@@ -6,15 +6,11 @@ const select2 = document.querySelector('.theme2')
 selectTheme.addEventListener('click', function(event) {
     darkMode.classList.toggle('black')
     select.classList.toggle('witch')
-    // console.log('clicked');
-    // alert(event.target)
 })
 
 select2.addEventListener('click', function(event) {
     darkMode.classList.toggle('black')
-    select.classList.toggle('witch')
-    // console.log('clicked');
-    // alert(event.target)
+    select2.classList.toggle('witch')
 })
 
 const menu = document.querySelector('.hamburger')

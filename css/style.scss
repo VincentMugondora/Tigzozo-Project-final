@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "josefins";
-    src: url("../josefin-sans/JosefinSans-SemiBoldItalic.ttf");
+    src: url("../josefin-sans/JosefinSans-Regular.ttf");
 }
 
 html, body, div, span, applet, object, iframe,
@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-    font-size: 'josefins';
+    font-family: 'josefins';
 }
 ol, ul {
 	list-style: none;
@@ -294,12 +294,17 @@ table {
             font-size: 1.5rem;
             margin-bottom: 20px;
         }
+        img{
+            height: 64%;
+            object-fit: cover;
+        }
         .img{
             display: flex;
             gap: 1%;
             .images{
                 position: relative;
                 width: 39%;
+                height: 64%;
                 img{
                     width: 100%;
                     object-fit: cover;
@@ -325,8 +330,36 @@ table {
             }
             .images1{
                 width: 39%;
-                img{
+                .text{
+                    background: #701891;
                     width: 100%;
+                    height: 41%;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: left;
+                    gap: 20px;
+                    position: relative;
+                    object-fit: contain;
+                    object-position: top;
+                    .h4{
+                        margin-top: 20px;
+                    }
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+
+                        img{
+                            height: 20px;
+                            width: 20px;
+                            background: grey;
+                            position: absolute;
+                            bottom: 0;
+                            right: 0;
+                        }
+                    }
                 }
             }
         }
@@ -391,6 +424,11 @@ table {
     }
 }
 .social{
+    h2{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-top: 40px;
+    }
         .right{
             display: flex;
             align-items: center;
@@ -425,6 +463,7 @@ table {
 .footer{
     background: #701891;
     color: white;
+    padding-top: 1rem;
     h4{
         font-weight: 600;
         text-decoration: underline;
@@ -519,26 +558,29 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
                 img{
                     height: 30px;
-                    background: white;
+                }
+                .dark-theme{
+                    position: relative;
+                    display: block;
                 }
 
                 .light-theme{
                     position: absolute;
                     display: none;
+                    z-index: -1;
                 }
             }
 
             .witch{
                 .light-theme{
                     display: block;
+                    position: relative;
+                    z-index: 5;
+                }
+                .dark-theme{
                     position: absolute;
-
-                    .dark-theme{
-                        position: absolute;
-                        display: none;
-                        height: 0px;
-                    }
-
+                    display: none;
+                    height: 0px;
                 }
             }
            }
@@ -585,14 +627,17 @@ No media query since this is the default in Bootstrap because it is "mobile firs
      }
 
      .services{
-        .images{
-            p{
-                top: 330px;
+        img{
+            height: 64%;
+        }
+        .images1{
+           
+            .text{
+                height: 64%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
             }
-            img{
-                top: 320px;
-            }
-
         }
      }
 
@@ -685,6 +730,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 
             }
+        }
+    }
+
+    .social{
+        .img{
+            margin-top: 80px;
         }
     }
 }
