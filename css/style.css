@@ -219,12 +219,19 @@ table {
 }
 .banner .images img {
   width: 24%;
-  height: auto;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.banner .images .img {
+  margin-top: 20px;
 }
 .banner .images .top {
   margin-top: 40px;
 }
 
+.about {
+  margin-top: -30px;
+}
 .about .text {
   padding-bottom: 2rem;
   display: flex;
@@ -267,15 +274,6 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.services .row .img {
-  display: flex;
-  gap: 1%;
-}
-.services .row .img .images {
-  position: relative;
-  width: 39%;
-  height: 64%;
-}
 .services .row .img .images img {
   width: 100%;
   -o-object-fit: cover;
@@ -300,12 +298,13 @@ table {
   height: 63.7%;
 }
 .services .row .img .images1 {
-  width: 39%;
+  width: 100%;
 }
 .services .row .img .images1 .text {
+  padding: 3rem 0;
   background: #701891;
   width: 100%;
-  height: 41%;
+  line-height: 30px;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -335,6 +334,9 @@ table {
   right: 0;
 }
 
+.testimonials {
+  padding-top: 80px;
+}
 .testimonials .right h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -402,10 +404,18 @@ table {
   gap: 0.8%;
 }
 .social .right img {
-  width: 16%;
+  width: 33%;
+  margin-top: 10px;
+}
+.social .right .long {
+  height: 38vh;
+}
+.social .right .vin {
+  margin-top: 50px;
 }
 .social .right .img {
   margin-top: 50px;
+  display: none;
 }
 
 .follow div {
@@ -427,18 +437,24 @@ table {
   background: #701891;
   color: white;
   padding-top: 1rem;
+  line-height: normal;
+  font-weight: 700;
+  line-height: 30px;
 }
 .footer h4 {
   font-weight: 600;
   text-decoration: underline;
+  font-size: 1.5rem;
 }
 .footer .first {
   display: flex;
+  font-size: 0.7rem;
   gap: 10px;
   flex-direction: column;
+  line-height: 18px;
 }
 .footer .first p {
-  width: 150px;
+  width: 200px;
 }
 .footer .first img {
   height: 20px;
@@ -454,7 +470,29 @@ table {
   gap: 10px;
 }
 .footer .second {
-  padding: 0rem 0px 2rem 1rem;
+  line-height: 20px;
+}
+.footer .division {
+  display: flex;
+  justify-content: left;
+  font-size: 0.7rem;
+}
+.footer .division-one {
+  display: flex;
+  justify-content: space-between;
+  line-height: normal;
+  margin-top: 20px;
+  font-size: 0.7rem;
+}
+.footer .division-one img {
+  height: 10px;
+}
+.footer .fourth {
+  padding-bottom: 20px;
+}
+.footer .fourth div {
+  display: flex;
+  gap: 10px;
 }
 
 /*
@@ -559,14 +597,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
        object-fit: cover;
     margin-left: -20px;
   }
+  .services .img {
+    display: flex;
+  }
   .services img {
     height: 64%;
   }
   .services .images1 .text {
+    width: 30vw;
     height: 64%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
 }
 .testimonials .left {
