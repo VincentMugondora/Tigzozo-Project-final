@@ -163,7 +163,7 @@ table {
         position: absolute;
         top: -100vh;
         right: 0px;
-        transition: all 2s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
         .theme {
             display: flex;
@@ -179,7 +179,7 @@ table {
         }
 
         .witch {
-            transform: all 1s ease-in;
+            transform: all 0.5s ease-in;
 
             .light-theme {
                 display: block;
