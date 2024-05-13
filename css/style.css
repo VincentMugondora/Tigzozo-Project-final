@@ -6,19 +6,87 @@
   font-family: "josefins";
   src: url("../josefin-sans/JosefinSans-Regular.ttf");
 }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -28,8 +96,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -38,16 +115,20 @@ body {
   font-family: "josefins";
 }
 
-ol, ul {
-  list-style: none;
+ol,
+ul {
+  list-style: decimal;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -265,6 +346,9 @@ table {
   border: none;
 }
 
+.services {
+  margin-top: -50px;
+}
 .services .row h2 {
   font-size: 1.5rem;
   margin-bottom: 20px;
@@ -274,12 +358,33 @@ table {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.services .row .text {
+  background: #701891;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 80vh;
+  justify-content: center;
+  color: white;
+}
+.services .row .text h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 40px;
+}
+.services .row .text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 .services .row .img .images img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  height: 80vh;
 }
 .services .row .img .images .pic {
   position: absolute;
@@ -295,43 +400,7 @@ table {
 }
 .services .row .img .images .picture {
   width: 100%;
-  height: 63.7%;
-}
-.services .row .img .images1 {
-  width: 100%;
-}
-.services .row .img .images1 .text {
-  padding: 3rem 0;
-  background: #701891;
-  width: 100%;
-  line-height: 30px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-  gap: 20px;
-  position: relative;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: top;
-     object-position: top;
-}
-.services .row .img .images1 .text .h4 {
-  margin-top: 20px;
-}
-.services .row .img .images1 .text ul {
-  display: flex;
-  flex-direction: column;
-}
-.services .row .img .images1 .text ul img {
-  height: 20px;
-  width: 20px;
-  background: grey;
-  position: absolute;
-  bottom: 0;
-  right: 0;
+  height: 80vh;
 }
 
 .testimonials {
@@ -414,7 +483,6 @@ table {
   margin-top: 50px;
 }
 .social .right .img {
-  margin-top: 50px;
   display: none;
 }
 
@@ -438,60 +506,41 @@ table {
   color: white;
   padding-top: 1rem;
   line-height: normal;
-  font-weight: 700;
-  line-height: 30px;
 }
-.footer h4 {
-  font-weight: 600;
-  text-decoration: underline;
-  font-size: 1.5rem;
-}
-.footer .first {
-  display: flex;
-  font-size: 0.7rem;
-  gap: 10px;
-  flex-direction: column;
-  line-height: 18px;
-}
-.footer .first p {
-  width: 200px;
-}
-.footer .first img {
-  height: 20px;
-}
-.footer .first .logo {
-  height: 40px;
-  width: -moz-fit-content;
-  width: fit-content;
-  background: white;
-}
-.footer .first div {
-  display: flex;
-  gap: 10px;
-}
-.footer .second {
-  line-height: 20px;
-}
-.footer .division {
-  display: flex;
-  justify-content: left;
-  font-size: 0.7rem;
-}
-.footer .division-one {
-  display: flex;
-  justify-content: space-between;
-  line-height: normal;
-  margin-top: 20px;
-  font-size: 0.7rem;
-}
-.footer .division-one img {
+.footer img {
   height: 10px;
 }
-.footer .fourth {
-  padding-bottom: 20px;
+.footer .logo {
+  height: 50px;
+  background: white;
 }
-.footer .fourth div {
+.footer .container {
   display: flex;
+  justify-content: space-between;
+}
+.footer .container h4 {
+  font-size: 1.3rem;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.footer .container .division-one {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.footer .container .division-two {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+.footer .container .division-two .footer-two {
+  line-height: 26px;
+}
+.footer .container .division-two .footer-four div {
+  display: flex;
+  align-items: center;
   gap: 10px;
 }
 
@@ -597,20 +646,34 @@ No media query since this is the default in Bootstrap because it is "mobile firs
        object-fit: cover;
     margin-left: -20px;
   }
-  .services .img {
-    display: flex;
-  }
   .services img {
-    height: 64%;
+    height: 60vh;
+  }
+  .services .images1 {
+    height: 70vh;
+    margin-bottom: 10px;
   }
   .services .images1 .text {
-    width: 30vw;
-    height: 64%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .services .images1 .text .h4 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: underline;
   }
 }
+.social img {
+  height: 38vh;
+}
+.social .vin {
+  margin-top: 70px;
+}
+
 .testimonials .left {
   margin-top: 0;
 }
@@ -670,6 +733,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .about .text div .img {
     margin-top: 129px;
   }
+  .services .img {
+    display: flex;
+  }
+  .services .img .images1 {
+    width: 30vw;
+    background: red;
+  }
+  .services .img .images1 .text {
+    width: 30vw;
+  }
   .services .images img {
     top: 620px;
   }
@@ -678,9 +751,50 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .testimonials .right .margin {
     margin-left: 10rem;
+    margin-top: 70px;
   }
-  .social .img {
-    margin-top: 80px;
+  .social .right .img {
+    margin-top: 200px;
+    display: block;
+  }
+  .social .right img {
+    width: 15vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top;
+       object-position: top;
+    height: 70vh;
+  }
+  .social .right .vin {
+    margin: 0px;
+  }
+  .social .right .long {
+    height: 70vh;
+  }
+  .footer {
+    display: flex;
+  }
+  .footer .division-one {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .division-one .footer-one {
+    position: relative;
+  }
+  .footer .division-one .footer-three {
+    position: absolute;
+    left: 30vw;
+  }
+  .footer .division-two {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .division-two .footer-two {
+    position: relative;
+  }
+  .footer .division-two .footer-four {
+    position: absolute;
+    right: 30vw;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
