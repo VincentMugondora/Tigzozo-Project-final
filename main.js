@@ -20,3 +20,7 @@ menu.addEventListener('click', function(){
     menuOne.classList.toggle('vincent')
     menu.classList.toggle('active-lines')
 })
+
+darkMode.addEventListener('click', function(){
+    darkMode.classList.click('white')
+})

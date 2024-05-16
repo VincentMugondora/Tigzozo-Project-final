@@ -145,6 +145,11 @@ table {
     color: white;
 }
 
+.white{
+    background: white;
+    color: #000;
+}
+
 .navbar {
 
     .pc-nav {
@@ -935,16 +940,16 @@ No media query since this is the default in Bootstrap because it is "mobile firs
             display: block;
         }
         img{
-            width: 15vw;
             object-fit: cover;
             object-position: top;
-            height: 70vh;
+            width: 10vw;
+            height: 50vh;
         }
         .vin{
             margin: 0px;
         }
         .long{
-            height: 70vh;
+            height: 50vh;
         }
        }
     }
@@ -957,10 +962,14 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
             .footer-one{
                 position: relative;
+
+                img{
+                    height: 30px;
+                }
             }
             .footer-three{
                 position: absolute;
-                left: 30vw;
+                left: 30%;
             }
         }
         .division-two{
@@ -973,7 +982,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
             .footer-four{
                 position: absolute;
-                right: 30vw;
+                right: 30%;
             }
         }
     }

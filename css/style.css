@@ -143,6 +143,11 @@ table {
   color: white;
 }
 
+.white {
+  background: white;
+  color: #000;
+}
+
 .navbar .pc-nav {
   display: none;
 }
@@ -758,18 +763,18 @@ No media query since this is the default in Bootstrap because it is "mobile firs
     display: block;
   }
   .social .right img {
-    width: 15vw;
     -o-object-fit: cover;
        object-fit: cover;
     -o-object-position: top;
        object-position: top;
-    height: 70vh;
+    width: 10vw;
+    height: 50vh;
   }
   .social .right .vin {
     margin: 0px;
   }
   .social .right .long {
-    height: 70vh;
+    height: 50vh;
   }
   .footer {
     display: flex;
@@ -781,9 +786,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   .footer .division-one .footer-one {
     position: relative;
   }
+  .footer .division-one .footer-one img {
+    height: 30px;
+  }
   .footer .division-one .footer-three {
     position: absolute;
-    left: 30vw;
+    left: 30%;
   }
   .footer .division-two {
     display: flex;
@@ -794,7 +802,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
   }
   .footer .division-two .footer-four {
     position: absolute;
-    right: 30vw;
+    right: 30%;
   }
 }
 /* Extra large devices (large desktops, 1200px and up) */
