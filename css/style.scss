@@ -115,6 +115,13 @@ section {
 body {
     line-height: 1;
     font-family: 'josefins';
+
+    a{
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
 }
 
 ol,
@@ -296,10 +303,10 @@ table {
             margin-left: -12px;
 
             button {
-                padding: 10px 25px;
+                padding: 5px 20px;
                 background: #701891;
                 border: none;
-                font-weight: 600;
+                font-weight: 400;
                 color: white;
             }
 
