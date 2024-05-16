@@ -148,10 +148,13 @@ table {
   background: black;
   color: white;
 }
+.black a {
+  color: #fff;
+}
 
-.white {
-  background: white;
-  color: #000;
+.abilities .overlay {
+  display: none;
+  margin-top: -100vh;
 }
 
 .navbar .pc-nav {

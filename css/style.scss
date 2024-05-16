@@ -150,11 +150,22 @@ table {
 .black {
     background: black;
     color: white;
+
+    a{
+        color: #fff;
+    }
 }
 
-.white{
-    background: white;
-    color: #000;
+// .white{
+//     background: white;
+//     color: #000;
+// }
+
+.abilities{
+    .overlay{
+        display: none;
+        margin-top: -100vh;
+    }
 }
 
 .navbar {

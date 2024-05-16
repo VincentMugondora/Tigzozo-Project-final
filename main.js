@@ -1,7 +1,10 @@
 const darkMode = document.querySelector('.dark')
+const darkModes = document.querySelector('body')
 const selectTheme = document.querySelector('.theme')
 const select = document.querySelector('.theme')
 const select2 = document.querySelector('.theme2')
+const fine = document.querySelector(".ability")
+const linkTags = document.querySelectorAll(".link-tag")
 
 selectTheme.addEventListener('click', function(event) {
     darkMode.classList.toggle('black')
@@ -21,6 +24,20 @@ menu.addEventListener('click', function(){
     menu.classList.toggle('active-lines')
 })
 
-darkMode.addEventListener('click', function(){
-    darkMode.classList.click('white')
+darkModes.addEventListener('click', function(){
+    darkModes.classList.add('white')
+})
+
+
+
+
+linkTags.forEach((tag)=>{
+    // console.log("here",tag)
+
+
+    
+    tag.addEventListener('click', ()=>{
+        menuOne.classList.toggle('vincent')
+        menu.classList.toggle('active-lines')
+    })
 })
